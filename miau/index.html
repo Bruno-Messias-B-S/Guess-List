@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../miau/styles.css">
+    <title>Guest List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="img-container">
+                <img class="image" onclick="menu()" src="../images(png)/menu-aberto.png" width="28px" />
+            </div>
+            <div id="menu">
+                <h3 class="title-menu">Match an ID <br/> and a Name</h3>
+                <div class="list-id">
+                    <h4 class="ids">IDs:</h4>
+                    <h4 class="ids-numbers">345 <br/> 567 <br/> 789 <br/> 234 <br/> 123 <br/> 678 <br/> 456</h4>
+                </div>
+                <div class="list-names">
+                    <h4 class="names">Names:</h4>
+                    <h4 class="names-names">Jhow <br/> Kantu <br/> Chlo <br/> Bruno <br/> Lira <br/> Zey <br/> Nano</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo-container">
+                <h3 class="titulo">Guest List</h3>
+            </div>
+            <div class="design"></div>
+            <div class="inputs-container">
+                <div class="id-container">
+                    <span class="id">ID:</span>
+                    <input type="text" class="input-number" name="numero" maxlength="3" />
+                </div>
+                <div class="nome-container">
+                    <span class="nome">NAME:</span>
+                    <input type="text" class="input-text" name="texto" />
+                </div>
+            </div>
+            <div class="buttons-container">
+                <input type="button" class="botao" value="Verify"/>
+                <input type="button" class="cleaner" onclick="cleaner()" value="Reset" />
+            </div>
+            <div class="results-container">
+                <div class="div"></div>
+                <div class="resultado"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../miau/javas2.js"></script>
+    <script src="../miau/javas.js"></script>
+</body>
+</html>
